@@ -25,7 +25,7 @@ npm link
   - `qualified-event`（Materials → 内部事件入站，保留主工程 pydantic 语义）
   - `writing-request`（Materials → Writer）
   - `quality-verdict`（QualityGate → Writer）
-  - `image-request` / `image-response`（Writer → ImageGen）
+  - `image-request`（Writer → ImageGen，含响应 shape）
   - `publish-request`（Writer → Publisher）
   - `candidate-feedback`（Writer/Publisher → Scanner）
 - **HMAC**：`buildCanonicalString` / `computeSignature` / `sha256Hex` / `signRequest` / `verifyRequest`，与主工程 `app/core/security.py` 逐字节对齐（含常量时间比较）

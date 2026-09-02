@@ -7,15 +7,12 @@
  * qualified-event keeps the main-engine's string `"1.0"` semantics.
  */
 export const PACKAGE_VERSION = '0.1.1';
-
 export const SUPPORTED_SCHEMA_VERSIONS = {
-  hotspotCandidate: 1,
-  qualifiedEvent: '1.0',
-  writingRequest: 1,
-  qualityVerdict: 1,
-  imageRequest: 1,
-  publishRequest: 1,
-  candidateFeedback: 1
-} as const;
-
-export type SupportedSchemaVersions = typeof SUPPORTED_SCHEMA_VERSIONS;
+    hotspotCandidate: 1,
+    qualifiedEvent: '1.0',
+    writingRequest: 1,
+    qualityVerdict: 1,
+    imageRequest: 1,
+    publishRequest: 1,
+    candidateFeedback: 1
+};

@@ -6,16 +6,14 @@
  * spec: hotspot-candidate and the other new contracts use a number literal `1`, while
  * qualified-event keeps the main-engine's string `"1.0"` semantics.
  */
-export const PACKAGE_VERSION = '0.1.1';
-
-export const SUPPORTED_SCHEMA_VERSIONS = {
-  hotspotCandidate: 1,
-  qualifiedEvent: '1.0',
-  writingRequest: 1,
-  qualityVerdict: 1,
-  imageRequest: 1,
-  publishRequest: 1,
-  candidateFeedback: 1
-} as const;
-
+export declare const PACKAGE_VERSION = "0.1.1";
+export declare const SUPPORTED_SCHEMA_VERSIONS: {
+    readonly hotspotCandidate: 1;
+    readonly qualifiedEvent: "1.0";
+    readonly writingRequest: 1;
+    readonly qualityVerdict: 1;
+    readonly imageRequest: 1;
+    readonly publishRequest: 1;
+    readonly candidateFeedback: 1;
+};
 export type SupportedSchemaVersions = typeof SUPPORTED_SCHEMA_VERSIONS;

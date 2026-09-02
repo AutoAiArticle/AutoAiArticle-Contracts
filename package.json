@@ -1,6 +1,6 @@
 {
   "name": "@autoai/contracts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cross-service event contracts, HMAC signing, error codes, and idempotency rules for AutoAiArticle",
   "type": "module",
   "main": "dist/index.js",
@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "typecheck": "tsc -p tsconfig.test.json",
     "test": "vitest run",
     "lint": "eslint .",
