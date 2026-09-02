@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "delivery_id": "dlv-bad-url",
+  "source_event_id": "evt-bad-url-001",
+  "decision_revision": 1,
+  "occurred_at": "2026-08-30T10:00:00Z",
+  "event": {
+    "canonical_title": "某事件标题",
+    "summary": "这是一个用于测试的摘要文本，长度需要超过五十个字符以满足最小长度约束，这里补充一些内容确保摘要字段满足最小五十字符的要求。",
+    "field": null,
+    "risk_level": "low",
+    "event_fingerprint": "fp-bad-url",
+    "entities": {
+      "people": [],
+      "organizations": [],
+      "locations": [],
+      "keywords": [],
+      "time_expressions": []
+    }
+  },
+  "trend": {
+    "first_seen_at": "2026-08-30T09:00:00Z",
+    "last_seen_at": "2026-08-30T10:00:00Z",
+    "score": 50,
+    "trend_score": 50,
+    "source_count": 1,
+    "source_codes": ["test"],
+    "best_rank": 1
+  },
+  "decision": {
+    "should_write": true,
+    "priority": "normal",
+    "decision_score": 50,
+    "reason_codes": ["test"],
+    "reason_summary": "test"
+  },
+  "references": [
+    {
+      "url": "http://localhost:8080/internal",
+      "title": "内网地址",
+      "source_name": "test",
+      "is_authoritative": false
+    }
+  ]
+}

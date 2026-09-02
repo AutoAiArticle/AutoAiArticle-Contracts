@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "request_id": "2f4a6b8c-5e7d-4b9f-9c4d-6f7a8b9c0d1e",
+  "article_id": "article-001",
+  "cover_prompt": "一张科技感十足的封面图，展示开源大模型的抽象概念，色调以蓝色为主。",
+  "fallback_allowed": true,
+  "idempotency_key": "article-001:cover:v1"
+}

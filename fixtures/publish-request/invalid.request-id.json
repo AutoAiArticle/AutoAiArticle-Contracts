@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "request_id": "not-a-uuid",
+  "article_id": "article-001",
+  "platform": "toutiao",
+  "account_id": "account-001",
+  "content_r2_key": "articles/article-001/content.json",
+  "idempotency_key": "article-001:toutiao:v1"
+}

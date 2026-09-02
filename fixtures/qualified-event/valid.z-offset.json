@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "delivery_id": "dlv-ztz-0001",
+  "source_event_id": "evt-z-2026-001",
+  "decision_revision": 1,
+  "occurred_at": "2026-08-30T02:00:00Z",
+  "event": {
+    "canonical_title": "某科技公司发布新一代产品",
+    "summary": "该公司今日召开发布会正式发布新一代旗舰产品，产品在性能、续航与影像方面均有显著提升，预计将于下月开启预售，售价区间已同步公布。",
+    "field": null,
+    "risk_level": "low",
+    "event_fingerprint": "fp-product-20260830",
+    "entities": {
+      "people": [],
+      "organizations": ["某科技公司"],
+      "locations": [],
+      "keywords": ["新产品", "发布会"],
+      "time_expressions": ["下月"]
+    }
+  },
+  "trend": {
+    "first_seen_at": "2026-08-30T00:00:00Z",
+    "last_seen_at": "2026-08-30T02:00:00Z",
+    "score": 70,
+    "trend_score": 66,
+    "source_count": 3,
+    "source_codes": ["toutiao"],
+    "best_rank": null
+  },
+  "decision": {
+    "should_write": true,
+    "priority": "normal",
+    "decision_score": 71,
+    "reason_codes": ["tech_interest"],
+    "reason_summary": "科技产品发布，具备一定关注度。"
+  },
+  "references": [
+    {
+      "url": "https://example.com/tech/launch",
+      "title": "新品发布会",
+      "source_name": "科技媒体",
+      "is_authoritative": false
+    }
+  ]
+}

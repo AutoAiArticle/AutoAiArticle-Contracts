@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "callback_id": "5c7d9e1f-8a0b-4e2c-8f7a-9c0d1e2f3a4b",
+  "receipt_id": "receipt-002",
+  "idempotency_key": "toutiao:topic-1002:1:initial",
+  "event_id": "toutiao:topic-1002",
+  "lifecycle_status": "rejected",
+  "adopted": false,
+  "rejected_reason": "与已有选题重复",
+  "article_id": null,
+  "article_created_at": null,
+  "published_at": null,
+  "manual_quality_score": null,
+  "performance_score": null,
+  "occurred_at": "2026-08-30T12:00:00Z"
+}

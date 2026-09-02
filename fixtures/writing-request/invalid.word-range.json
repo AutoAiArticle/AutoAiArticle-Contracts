@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "request_id": "8b0c8f2e-4a1b-4c3d-9e2f-1a2b3c4d5e6f",
+  "bundle_id": "bundle-001",
+  "source_event_id": "evt-2026-08-30-001",
+  "event_snapshot": {
+    "canonical_title": "某地发布暴雨橙色预警",
+    "summary": "气象部门于今日发布暴雨橙色预警，预计未来24小时内局部地区降雨量将超过100毫米，相关部门已启动防汛应急响应，提醒市民减少不必要出行并注意防范城市内涝与山洪地质灾害。",
+    "field": null,
+    "risk_level": "low",
+    "entities": {
+      "people": [],
+      "organizations": [],
+      "locations": ["某地"],
+      "keywords": ["暴雨"],
+      "time_expressions": []
+    }
+  },
+  "account_constraints": {
+    "field_restrictions": ["金融", "医疗"],
+    "max_daily_posts": 0
+  },
+  "word_range": {
+    "min": 1500,
+    "max": 1000
+  },
+  "idempotency_key": "evt-2026-08-30-001:write:v1"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "callback_id": "4b6c8d0e-7a9f-4d1b-9e6f-8b9c0d1e2f3a",
+  "receipt_id": "receipt-001",
+  "idempotency_key": "toutiao:topic-1001:1:initial",
+  "event_id": "toutiao:topic-1001",
+  "lifecycle_status": "article_created",
+  "adopted": true,
+  "rejected_reason": null,
+  "article_id": "article-001",
+  "article_created_at": "2026-08-30T12:00:00Z",
+  "published_at": null,
+  "manual_quality_score": 85,
+  "performance_score": 1200.5,
+  "occurred_at": "2026-08-30T12:00:00Z"
+}

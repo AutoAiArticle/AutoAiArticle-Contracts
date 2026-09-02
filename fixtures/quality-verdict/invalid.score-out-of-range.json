@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "1e3f5a7b-4d6c-4a8f-8b3c-5e6f7a8b9c0d",
+  "article_draft_id": "draft-003",
+  "scores": {
+    "ai_trace": {
+      "score": 150,
+      "rule_score": 120,
+      "model_score": 180,
+      "passed": false,
+      "rewrite_required": false
+    },
+    "originality": {
+      "score": 92,
+      "passed": true,
+      "similarity_evidence": []
+    },
+    "fact_risk": {
+      "score": 10,
+      "passed": true,
+      "mismatched_entities": []
+    },
+    "values": {
+      "score": 95,
+      "passed": true,
+      "hard_block": false,
+      "hit_rules": []
+    }
+  },
+  "overall_passed": false,
+  "reasons": [],
+  "evaluated_at": "2026-08-30T12:00:00Z"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "request_id": "2f4a6b8c-5e7d-4b9f-9c4d-6f7a8b9c0d1e",
+  "article_id": "article-001",
+  "cover_prompt": "封面提示词",
+  "fallback_allowed": false,
+  "idempotency_key": "article-001:cover:v1"
+}

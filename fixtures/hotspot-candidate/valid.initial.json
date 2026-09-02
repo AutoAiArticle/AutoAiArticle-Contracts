@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "event_type": "hotspot_candidate",
+  "event_id": "toutiao:topic-1001",
+  "candidate_version": 1,
+  "notification_type": "initial",
+  "source": {
+    "platform": "toutiao",
+    "board": "hotboard",
+    "url": "https://www.toutiao.com/trending/1001/"
+  },
+  "topic": {
+    "title": "国产大模型开源新进展引发行业关注",
+    "source_tags": ["科技", "AI"],
+    "ai_category": "科技"
+  },
+  "observed": {
+    "at": "2026-08-30T10:00:00Z",
+    "rank": 3,
+    "first_seen_at": "2026-08-30T08:00:00Z",
+    "hot_value": 9823456
+  },
+  "trend": {
+    "score": 88,
+    "reasons": ["rank_rising", "sustained_heat"]
+  },
+  "requirements": {
+    "needs_source_verification": false,
+    "do_not_treat_as_verified_fact": true
+  },
+  "idempotency_key": "toutiao:topic-1001:1:initial",
+  "ai_review": {
+    "status": "succeeded",
+    "writing_score": 72,
+    "score_breakdown": {
+      "timeliness": 18,
+      "information_gain": 16,
+      "audience_fit": 12,
+      "verifiability": 10,
+      "expandability": 8,
+      "competition": 3,
+      "risk": 5
+    },
+    "summary": "开源大模型进展，具备时效性与受众关注度，需权威来源佐证。",
+    "entities": [
+      { "name": "大模型", "type": "technology" },
+      { "name": "开源", "type": "topic" }
+    ],
+    "risk_level": "allowed",
+    "risk_flags": [],
+    "search_queries": ["国产大模型 开源 2026"]
+  },
+  "evidence": {
+    "verified": false,
+    "note": "retrieval leads only; main engine must verify before publication",
+    "items": [
+      {
+        "source": "web_search",
+        "title": "某大模型开源报道",
+        "snippet": "开源模型发布……",
+        "url": "https://example.com/news/1",
+        "similarity": 0.91
+      }
+    ]
+  }
+}

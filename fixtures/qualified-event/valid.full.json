@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "delivery_id": "dlv-8f3a2b1c",
+  "source_event_id": "evt-2026-08-30-001",
+  "decision_revision": 1,
+  "occurred_at": "2026-08-30T10:00:00+08:00",
+  "event": {
+    "canonical_title": "某地发布暴雨橙色预警",
+    "summary": "气象部门于今日发布暴雨橙色预警，预计未来24小时内局部地区降雨量将超过100毫米，相关部门已启动防汛应急响应，提醒市民减少不必要出行并注意防范城市内涝与山洪地质灾害。",
+    "field": "社会",
+    "risk_level": "medium",
+    "event_fingerprint": "fp-baoyu-yujing-20260830",
+    "entities": {
+      "people": [],
+      "organizations": ["气象部门"],
+      "locations": ["某地"],
+      "keywords": ["暴雨", "橙色预警", "防汛"],
+      "time_expressions": ["未来24小时"]
+    }
+  },
+  "trend": {
+    "first_seen_at": "2026-08-30T08:00:00+08:00",
+    "last_seen_at": "2026-08-30T10:00:00+08:00",
+    "score": 90,
+    "trend_score": 85,
+    "source_count": 6,
+    "source_codes": ["toutiao", "weibo", "news"],
+    "best_rank": 1
+  },
+  "decision": {
+    "should_write": true,
+    "priority": "high",
+    "decision_score": 92,
+    "reason_codes": ["high_timeliness", "high_public_interest"],
+    "reason_summary": "突发天气事件，公众关注度高，建议立即写作。"
+  },
+  "references": [
+    {
+      "url": "https://example.com/weather/alert/2026",
+      "title": "暴雨橙色预警发布",
+      "source_name": "气象台",
+      "published_at": "2026-08-30T08:30:00+08:00",
+      "observed_at": "2026-08-30T09:00:00+08:00",
+      "is_authoritative": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "0d2e4f6a-3c5b-4f7e-9a2b-4d5e6f7a8b9c",
+  "article_draft_id": "draft-002",
+  "scores": {
+    "ai_trace": {
+      "score": 75,
+      "rule_score": 70,
+      "model_score": 85,
+      "passed": false,
+      "rewrite_required": false
+    },
+    "originality": {
+      "score": 60,
+      "passed": false,
+      "similarity_evidence": [{ "source": "web", "similarity": 0.7 }]
+    },
+    "fact_risk": {
+      "score": 60,
+      "passed": false,
+      "mismatched_entities": [{ "entity": "某公司", "expected": "某科技公司" }]
+    },
+    "values": {
+      "score": 40,
+      "passed": false,
+      "hard_block": true,
+      "hit_rules": ["harmful_content"]
+    }
+  },
+  "overall_passed": false,
+  "reasons": ["ai_trace_over_65", "originality_below_80", "fact_risk_over_35", "value_hard_block"],
+  "evaluated_at": "2026-08-30T12:30:00Z"
+}

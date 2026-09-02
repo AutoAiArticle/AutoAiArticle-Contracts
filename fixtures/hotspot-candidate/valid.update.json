@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "event_type": "hotspot_candidate",
+  "event_id": "toutiao:topic-1002",
+  "candidate_version": 2,
+  "notification_type": "update",
+  "source": {
+    "platform": "toutiao",
+    "board": "hotboard",
+    "url": null
+  },
+  "topic": {
+    "title": "某地持续降雨导致多条道路封闭",
+    "source_tags": "weather",
+    "ai_category": null
+  },
+  "observed": {
+    "at": "2026-08-30T12:00:00+08:00",
+    "rank": 5,
+    "first_seen_at": "2026-08-30T06:00:00+08:00"
+  },
+  "trend": {
+    "score": 65,
+    "reasons": ["hot_value_unparseable"]
+  },
+  "requirements": {
+    "needs_source_verification": false,
+    "do_not_treat_as_verified_fact": true
+  },
+  "idempotency_key": "toutiao:topic-1002:2:update",
+  "ai_review": {
+    "status": "unavailable"
+  }
+}

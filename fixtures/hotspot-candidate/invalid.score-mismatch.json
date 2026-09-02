@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "event_type": "hotspot_candidate",
+  "event_id": "toutiao:topic-2001",
+  "candidate_version": 1,
+  "notification_type": "initial",
+  "source": {
+    "platform": "toutiao",
+    "board": "hotboard",
+    "url": null
+  },
+  "topic": {
+    "title": "一个标题",
+    "source_tags": [],
+    "ai_category": null
+  },
+  "observed": {
+    "at": "2026-08-30T10:00:00Z",
+    "rank": 1,
+    "first_seen_at": "2026-08-30T08:00:00Z"
+  },
+  "trend": {
+    "score": 50,
+    "reasons": []
+  },
+  "requirements": {
+    "needs_source_verification": false,
+    "do_not_treat_as_verified_fact": true
+  },
+  "idempotency_key": "toutiao:topic-2001:1:initial",
+  "ai_review": {
+    "status": "succeeded",
+    "writing_score": 60,
+    "score_breakdown": {
+      "timeliness": 20,
+      "information_gain": 10,
+      "audience_fit": 10,
+      "verifiability": 10,
+      "expandability": 10,
+      "competition": 5,
+      "risk": 5
+    },
+    "summary": "摘要",
+    "entities": [],
+    "risk_level": "allowed",
+    "risk_flags": [],
+    "search_queries": []
+  }
+}
