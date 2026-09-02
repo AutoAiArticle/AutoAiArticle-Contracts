@@ -43,7 +43,8 @@ describe('retryDelaySeconds', () => {
   it('rate_limited with Retry-After uses ceil(retryAfter * (1 + r*0.1))', () => {
     // r=0.5 → 1.05; ceil(60*1.05)=63
     expect(retryDelaySeconds('rate_limited', 0, 60, fixed)).toBe(63);
-    // retryAfter=0 → ceil(0)=0, but the formula returns 0 here (no floor applied).
+    // retryAfter=0 → ceil(0 * 1.05)=0。语义为"立即重试"（非"不重试"），
+    // 该分支（retryAfter≥0）不套 Math.max(1, …) 下限，与 Scanner 实现逐字节一致。
     expect(retryDelaySeconds('rate_limited', 0, 0, fixed)).toBe(0);
   });
 

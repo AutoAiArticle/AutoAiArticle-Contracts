@@ -16,6 +16,8 @@ npm install git+https://github.com/<org>/AutoAiArticle-Contracts.git#v0.1.0
 npm link
 ```
 
+> **依赖说明**：`zod` 以 `dependencies`（`^3.24`）声明，随本包一起安装，消费方**无需**自行安装 zod（与 Scanner 工程一致）。
+
 ## 内容
 
 - **事件 schema（zod v3）**：7 个事件，字段逐字段取自 Scanner / 主工程真实代码
@@ -81,3 +83,4 @@ npm run verify   # format + lint + typecheck + test + build 全绿
 - 所有 datetime 字段强制带时区偏移（`offset: true`）。
 - HMAC 验签顺序不可调换（见 `src/auth/hmac.ts`）。
 - 本包不做运行时 SSRF 防护（NFR-1 禁副作用）；仅做 URL 语法级拒绝。
+- `retryDelaySeconds` 的 `rate_limited` + `retryAfter=0` 会返回 `0`（公式 `ceil(0 * …)` 无下限），语义为"立即重试"，**不是**"不重试"——这与 `retryAfter≥0` 时走 Retry-After 分支的设计一致。

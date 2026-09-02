@@ -32,7 +32,7 @@
   "engines": {
     "node": ">=18"
   },
-  "peerDependencies": {
+  "dependencies": {
     "zod": "^3.24"
   },
   "devDependencies": {
@@ -41,7 +41,6 @@
     "prettier": "^3.5.0",
     "typescript": "^5.8.0",
     "typescript-eslint": "^8.0.0",
-    "vitest": "^3.1.0",
-    "zod": "^3.24.0"
+    "vitest": "^3.1.0"
   }
 }
